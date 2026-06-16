@@ -1,0 +1,6 @@
+产物不满意：
+1. Go 后端编译失败,jwt 包用了不存在的 API,go build 直接 undefined 报错,后端跑不起来,前端所有 API 调用都 500,整个系统完全不可用。
+2. 富文本编辑器没真用 TipTap,package.json 装了 @tiptap 全家桶但代码用 contenteditable + execCommand,PROMPT 要求的所见即所得编辑器没实现。
+过程不满意：
+1. 提交前没跑过 go build,后端编译错误这种阻塞问题没自检出来。
+2. package.json 声明了 TipTap 全套依赖但代码完全没引用,声明与实际脱节。
